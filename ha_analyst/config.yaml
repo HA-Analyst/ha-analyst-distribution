@@ -1,0 +1,81 @@
+name: HA Analyst
+version: 1.0.17.75
+slug: ha_analyst
+description: Informations-, Analyse- und Wissensschicht für Home Assistant
+url: https://github.com/HA-Analyst/ha-analyst-distribution
+image: ghcr.io/ha-analyst/ha-analyst
+startup: application
+boot: auto
+init: true
+apparmor: true
+tmpfs: true
+homeassistant_api: true
+homeassistant: 2026.9.0
+hassio_api: true
+hassio_role: default
+
+discovery:
+- ha_analyst
+
+ingress: true
+ingress_port: 8098
+ports:
+  8098/tcp: null
+  8099/tcp: null
+watchdog: http://[HOST]:[PORT:8099]/api/v1/health
+ports_description:
+  8098/tcp: Analyst Configuration UI
+  8099/tcp: Analyst API
+panel_title: HA Analyst
+panel_icon: mdi:home-analytics
+panel_admin: true
+map:
+- type: addon_config
+  read_only: false
+  path: /config
+- type: homeassistant_config
+  read_only: false
+  path: /homeassistant
+arch:
+- aarch64
+- amd64
+stage: experimental
+backup: hot
+backup_exclude:
+  - states.json
+  - inventory.json
+  - entities.json
+  - analysis.json
+  - knowledge.json
+  - consistency.json
+  - low_entities.json
+  - capabilities.json
+  - integrations.json
+  - installation.json
+  - readiness.json
+  - dashboard_install.json
+  - bridge_install.json
+  - ha_analyst_config_restore_rollback.json
+  - "*.tmp"
+options:
+  debug_enabled: false
+  debug_entities: false
+  debug_states: false
+  debug_inventory: false
+  debug_classifier: false
+  debug_storage: false
+  debug_analysis: false
+  zigbee2mqtt_websocket_url: ''
+  zigbee2mqtt_websocket_token: ''
+  zigbee_low_lqi_threshold: 50
+schema:
+  debug_enabled: bool
+  debug_entities: bool
+  debug_states: bool
+  debug_inventory: bool
+  debug_classifier: bool
+  debug_storage: bool
+  debug_analysis: bool
+  zigbee2mqtt_websocket_url: str
+  zigbee2mqtt_websocket_token: password
+  zigbee_low_lqi_threshold: float
