@@ -28,12 +28,19 @@
 
 Wenn zuvor ein lokaler App-Ordner mit demselben Slug `ha_analyst` verwendet wurde, muss dieser lokale Bestand entfernt werden, bevor die Repository-Version eindeutig verwendet werden kann. Ein lokaler Bestand kann die Repository-Version im App-Store überlagern.
 
+### Support & Diagnosepaket
+
+HA Analyst enthält im Ingress-Konfigurator den Bereich **Support & Beta-Diagnose**. Bei einem Problem zuerst den **Runtime-Selbsttest** ausführen und danach **Diagnosepaket herunterladen** wählen. Das ZIP enthält technische Release-, Installations-, Readiness-, Capability-, Integrations-, Konsistenz- und Dashboard-Zusammenfassungen sowie Runtime-Dateimetadaten. Es enthält keine Rohzustände, Entity-/Device-IDs, Benutzerkonfiguration, Home-Assistant-/Zigbee2MQTT-Tokens, Lizenzschlüssel oder signierte Lease-Tokens.
+
+Für einen Beta-Fehlerbericht bitte HA-Analyst-Version/Build, Home-Assistant-Version, Architektur (`amd64`/`aarch64`), Testart (Fresh Install/Update/Recovery), sichtbaren Bridge-Neustartstatus, Ergebnis des Runtime-Selbsttests, ungefähren Fehlerzeitpunkt und das Diagnosepaket angeben. Keine zusätzlichen Logs oder Screenshots veröffentlichen, wenn darin Zugangsdaten, interne URLs oder persönliche Hausdaten sichtbar sind.
+
 ### Was bei Problemen hilfreich ist
 
 1. App-Protokoll öffnen und den Zeitpunkt des Fehlers notieren.
 2. Prüfen, ob ein Home-Assistant-Neustart für die Bridge noch aussteht.
 3. Prüfen, ob Dashboard und Karten nach Analyst-Readiness echte Daten anzeigen.
-4. Diagnose-/Supportinformationen nur über die vorgesehenen Analyst-Funktionen weitergeben; keine Home-Assistant-Zugangsdaten oder Tokens veröffentlichen.
+4. Runtime-Selbsttest ausführen und das vorgesehene Diagnosepaket erzeugen.
+5. Diagnose-/Supportinformationen nur über die vorgesehenen Analyst-Funktionen weitergeben; keine Home-Assistant-Zugangsdaten oder Tokens veröffentlichen.
 
 📘 [Dokumentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
 
@@ -65,11 +72,18 @@ Wenn zuvor ein lokaler App-Ordner mit demselben Slug `ha_analyst` verwendet wurd
 
 If a local app folder with the same `ha_analyst` slug was used previously, remove that local copy before relying on the repository-managed version. A local copy can shadow the repository version in the app store.
 
+### Support & diagnostics package
+
+HA Analyst provides **Support & beta diagnostics** in its Home Assistant Ingress configuration UI. When reporting a problem, run the **runtime self-test** first and then choose **Download diagnostics package**. The ZIP contains technical release, installation, readiness, capability, integration, consistency and dashboard summaries plus runtime-file metadata. It does not contain raw states, entity/device IDs, user configuration, Home Assistant or Zigbee2MQTT tokens, license keys or signed lease tokens.
+
+For a beta issue report, include the HA Analyst version/build, Home Assistant version, architecture (`amd64`/`aarch64`), test type (fresh install/update/recovery), visible Bridge restart state, runtime self-test result, approximate failure time and the diagnostics package. Do not publish additional logs or screenshots if they expose credentials, internal URLs or private household data.
+
 ### Useful information when reporting a problem
 
 1. Open the app log and note when the problem occurred.
 2. Check whether a Home Assistant restart for the Bridge is still pending.
 3. Verify that the dashboard and cards show real data after Analyst readiness.
-4. Share diagnostic/support information only through the intended Analyst mechanisms; never publish Home Assistant credentials or tokens.
+4. Run the runtime self-test and create the intended diagnostics package.
+5. Share diagnostic/support information only through the intended Analyst mechanisms; never publish Home Assistant credentials or tokens.
 
 📘 [Documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
