@@ -16,7 +16,7 @@ body:
     id: analyst_version
     attributes:
       label: HA Analyst version / Beta build
-      placeholder: "1.0.17.78 / B0.1.01"
+      placeholder: "1.0.17.79 / B0.1.02"
     validations:
       required: true
 
