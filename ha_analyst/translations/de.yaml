@@ -1,0 +1,31 @@
+configuration:
+  debug_enabled:
+    name: Debug-Modus
+    description: Aktiviert die allgemeinen Debug-Ausgaben des HA Analyst.
+  debug_entities:
+    name: Entitäten-Debug
+    description: Aktiviert zusätzliche Diagnoseausgaben für Entitäten.
+  debug_states:
+    name: Zustands-Debug
+    description: Aktiviert zusätzliche Diagnoseausgaben für Home-Assistant-Zustände.
+  debug_inventory:
+    name: Inventar-Debug
+    description: Aktiviert zusätzliche Diagnoseausgaben für das Analyst-Inventar.
+  debug_classifier:
+    name: Klassifizierer-Debug
+    description: Aktiviert zusätzliche Diagnoseausgaben für die automatische Klassifizierung.
+  debug_storage:
+    name: Speicher-Debug
+    description: Aktiviert zusätzliche Diagnoseausgaben für persistente Analyst-Daten.
+  debug_analysis:
+    name: Analyse-Debug
+    description: Aktiviert zusätzliche Diagnoseausgaben für die Analyse-Pipeline.
+  zigbee2mqtt_websocket_url:
+    name: Zigbee2MQTT WebSocket-URL
+    description: Optionale WebSocket-Adresse von Zigbee2MQTT. Leer lassen, wenn Zigbee2MQTT nicht verwendet wird.
+  zigbee2mqtt_websocket_token:
+    name: Zigbee2MQTT WebSocket-Token
+    description: Optionales Zugriffstoken für die Zigbee2MQTT-WebSocket-Verbindung. Wird als Passwortfeld behandelt.
+  zigbee_low_lqi_threshold:
+    name: Zigbee LQI-Warnschwelle
+    description: Link-Quality-Werte unterhalb dieser Schwelle werden als schwach bewertet.
