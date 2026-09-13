@@ -1,11 +1,31 @@
 # HA Analyst – Changelog
 
-## 1.0.17.79 – B0.1.01 – External Beta Distribution Preparation
+## 1.0.17.79 – B0.1.02 – Diagnostics & External Validation
+
+### Deutsch
+
+- Der sourcefreie Native-Core-Stand wurde für `amd64` und `aarch64` gebaut, als unveränderliches Multi-Arch-Image veröffentlicht und anschließend ohne GHCR-Anmeldung extern validiert.
+- Das veröffentlichte Manifest `ghcr.io/ha-analyst/ha-analyst:1.0.17.79` ist anonym lesbar; beide unterstützten Architekturen lassen sich ohne Registry-Credentials ziehen.
+- Das bestehende Ingress-Diagnosepaket wurde um einen strikt erlaubnislistenbasierten Lizenzierungsstatus ergänzt. Exportiert werden nur technische Zustände wie Enforcement, Konfiguration, Client-Status, effektive Edition, Beta-Zugriff, Refresh-Fälligkeit und Produktversion.
+- Lizenzschlüssel, signierte Lease-Tokens, Installations-/Lizenz-/Lease-IDs, Signing-Material, Lizenzservice-URL, Home-Assistant-Tokens, Zigbee2MQTT-Secrets sowie Rohinhalte aus States, Entities, Analyse, Knowledge und Benutzerkonfiguration werden nicht in das Diagnosepaket übernommen.
+- Die Support-Dokumentation ist zweisprachig und beschreibt Runtime-Selbsttest, Diagnose-Download und die datensparsame Fehlerberichterstattung für externe Beta-Tester.
+- Der öffentliche Produkt-Release bleibt weiterhin fail-closed; veröffentlicht wird nur die sourcefreie Beta-Runtime, während das proprietäre Source-Repository privat bleibt.
+
+### English
+
+- The source-free native core was built for `amd64` and `aarch64`, published as an immutable multi-arch image and then externally validated without GHCR authentication.
+- The published manifest `ghcr.io/ha-analyst/ha-analyst:1.0.17.79` is anonymously readable and both supported architectures can be pulled without registry credentials.
+- The existing Ingress diagnostics package now includes a strict allowlist-based licensing-status section. Only technical states such as enforcement, configuration, client state, effective edition, beta access, refresh due state and product version are exported.
+- License keys, signed lease tokens, installation/license/lease identifiers, signing material, license-service URL, Home Assistant tokens, Zigbee2MQTT secrets and raw States, Entities, Analysis, Knowledge or user-configuration payloads are not included in the diagnostics package.
+- Bilingual support documentation describes the runtime self-test, diagnostics download and privacy-preserving issue reporting workflow for external beta testers.
+- The public product release remains fail-closed; only the source-free beta runtime is published while the proprietary source repository remains private.
+
+## 1.0.17.78 – B0.1.01 – External Beta Distribution Preparation
 
 ### Deutsch
 
 - Der sourcefreie Native-Core-Stand wird als vorgebautes Multi-Arch-Image für `amd64` und `aarch64` verteilt.
-- Das generische Image `ghcr.io/ha-analyst/ha-analyst:1.0.17.79` wurde als Multi-Arch-Manifest veröffentlicht und mit dem Release-Manifest verknüpft.
+- Das generische Image `ghcr.io/ha-analyst/ha-analyst:1.0.17.78` wurde als Multi-Arch-Manifest veröffentlicht und mit dem Release-Manifest verknüpft.
 - Das Distributionsrepository ist für Home Assistant anonym lesbar und enthält ausschließlich sourcefreie Distributionsmetadaten.
 - Der Wechsel von einem alten lokalen `addons/ha_analyst`-Entwicklungsstand auf die Repository-Version ist dokumentiert; ein lokaler Bestand mit demselben Slug kann die Repository-Version im App-Store überlagern.
 - Der Release-/Distribution-Vertrag wurde gehärtet: Versionsmetadaten werden aus `data/release.json` abgeleitet, sodass veraltete Template-Versionen den nächsten Publish nicht erneut blockieren.
@@ -16,7 +36,7 @@
 ### English
 
 - The source-free native core is distributed as a prebuilt multi-arch image for `amd64` and `aarch64`.
-- The generic image `ghcr.io/ha-analyst/ha-analyst:1.0.17.79` was published as a multi-arch manifest and recorded in the release manifest.
+- The generic image `ghcr.io/ha-analyst/ha-analyst:1.0.17.78` was published as a multi-arch manifest and recorded in the release manifest.
 - The distribution repository is anonymously readable by Home Assistant and contains source-free distribution metadata only.
 - Migration from an old local `addons/ha_analyst` development copy to the repository-managed version is documented; a local copy with the same slug can shadow the repository version in the app store.
 - The release/distribution contract was hardened: version metadata is derived from `data/release.json`, preventing stale template versions from blocking a future publish again.
