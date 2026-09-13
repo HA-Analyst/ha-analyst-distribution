@@ -1,0 +1,78 @@
+#include <tunables/global>
+
+# ============================================================
+# HA ANALYST
+# ============================================================
+# Single-stage restrictive AppArmor profile.
+# HA Analyst starts directly as the container entrypoint and does not rely on
+# S6 supervision.  This avoids a broad init envelope and keeps the actual
+# application process inside the same least-privilege profile from PID 1 on.
+# ============================================================
+
+profile ha_analyst flags=(attach_disconnected,mediate_deleted) {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+  signal,
+  network inet stream,
+  network inet6 stream,
+  network inet dgram,
+  network inet6 dgram,
+  network unix stream,
+
+  # Docker default init wrapper plus shell, Python and Bashio runtime.
+  /dev/init rix,
+  /bin/** rix,
+  /sbin/** rix,
+  /usr/bin/** rix,
+  /usr/sbin/** rix,
+  /usr/lib/bashio/** rix,
+  /usr/local/bin/ha-analyst-runtime rix,
+  /usr/local/bin/ha-analyst-discovery rix,
+  /usr/local/bin/ha-analyst-test rix,
+  /usr/local/bin/ha-analyst-native-shadow rix,
+  /usr/local/lib/ha_analyst/native_shadow/native_shadow.bin rix,
+  /usr/local/bin/ha-analyst-native rix,
+  /usr/local/lib/ha_analyst/native_runtime/analyst.bin rix,
+
+  # Python runtime and packaged Analyst payload are immutable at runtime.
+  /usr/lib/** rm,
+  /usr/local/lib/** rm,
+  /usr/local/lib/ha_analyst/** r,
+  /usr/local/share/ha_analyst/** r,
+
+  # Proc access needed for runtime/security introspection.
+  /proc/ r,
+  /proc/** r,
+
+  # App-owned persistent/configuration data and temporary files.
+  /data/ rw,
+  /data/** rwk,
+  /config/ rw,
+  /config/** rwk,
+  /tmp/ rw,
+  /tmp/** rwk,
+  /var/lib/ha_analyst_test_source/ rw,
+  /var/lib/ha_analyst_test_source/** rwk,
+
+  # Home Assistant config is writable only for Analyst-owned managed artifacts.
+  /homeassistant/ r,
+  /homeassistant/custom_components/ rw,
+  /homeassistant/custom_components/ha_analyst/ rw,
+  /homeassistant/custom_components/ha_analyst/** rwk,
+  /homeassistant/custom_components/.ha_analyst.installing/ rw,
+  /homeassistant/custom_components/.ha_analyst.installing/** rwk,
+  /homeassistant/custom_components/.ha_analyst.previous/ rw,
+  /homeassistant/custom_components/.ha_analyst.previous/** rwk,
+
+  /homeassistant/dashboards/ rw,
+  /homeassistant/dashboards/ha_analyst/ rw,
+  /homeassistant/dashboards/ha_analyst/** rwk,
+  /homeassistant/dashboards/.ha_analyst_dashboard_*/ rw,
+  /homeassistant/dashboards/.ha_analyst_dashboard_*/** rwk,
+  /homeassistant/dashboards/.ha_analyst.backup.*/ rw,
+  /homeassistant/dashboards/.ha_analyst.backup.*/** rwk,
+
+  /homeassistant/.ha_analyst_managed.json rwk,
+  /homeassistant/..ha_analyst_managed.json.*.tmp rwk,
+}

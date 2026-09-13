@@ -1,8 +1,8 @@
 name: HA Analyst
-version: 1.0.17.76
+version: 1.0.17.77
 slug: ha_analyst
 description: Informations-, Analyse- und Wissensschicht für Home Assistant
-url: https://github.com/HA-Analyst/ha-analyst-distribution
+url: https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md
 image: ghcr.io/ha-analyst/ha-analyst
 startup: application
 boot: auto
