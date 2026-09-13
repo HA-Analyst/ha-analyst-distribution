@@ -1,0 +1,31 @@
+configuration:
+  debug_enabled:
+    name: Debug mode
+    description: Enables general HA Analyst debug output.
+  debug_entities:
+    name: Entity debug
+    description: Enables additional diagnostic output for entities.
+  debug_states:
+    name: State debug
+    description: Enables additional diagnostic output for Home Assistant states.
+  debug_inventory:
+    name: Inventory debug
+    description: Enables additional diagnostic output for the Analyst inventory.
+  debug_classifier:
+    name: Classifier debug
+    description: Enables additional diagnostic output for automatic classification.
+  debug_storage:
+    name: Storage debug
+    description: Enables additional diagnostic output for persistent Analyst data.
+  debug_analysis:
+    name: Analysis debug
+    description: Enables additional diagnostic output for the analysis pipeline.
+  zigbee2mqtt_websocket_url:
+    name: Zigbee2MQTT WebSocket URL
+    description: Optional Zigbee2MQTT WebSocket address. Leave empty when Zigbee2MQTT is not used.
+  zigbee2mqtt_websocket_token:
+    name: Zigbee2MQTT WebSocket token
+    description: Optional access token for the Zigbee2MQTT WebSocket connection. It is handled as a password field.
+  zigbee_low_lqi_threshold:
+    name: Zigbee LQI warning threshold
+    description: Link quality values below this threshold are treated as weak.
