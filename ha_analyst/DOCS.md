@@ -34,6 +34,8 @@ HA Analyst enthält im Ingress-Konfigurator den Bereich **Support & Beta-Diagnos
 
 Für einen Beta-Fehlerbericht bitte HA-Analyst-Version/Build, Home-Assistant-Version, Architektur (`amd64`/`aarch64`), Testart (Fresh Install/Update/Recovery), sichtbaren Bridge-Neustartstatus, Ergebnis des Runtime-Selbsttests, ungefähren Fehlerzeitpunkt und das Diagnosepaket angeben. Keine zusätzlichen Logs oder Screenshots veröffentlichen, wenn darin Zugangsdaten, interne URLs oder persönliche Hausdaten sichtbar sind.
 
+Für geplante Abnahmeläufe steht im öffentlichen Support-Bereich zusätzlich das strukturierte **HA Analyst beta acceptance report**-Formular bereit. Es trennt Fresh Install, Update, Recovery, Runtime und Diagnose-Abnahme und verlangt keine geheimen oder hausbezogenen Daten.
+
 ### Was bei Problemen hilfreich ist
 
 1. App-Protokoll öffnen und den Zeitpunkt des Fehlers notieren.
@@ -77,6 +79,8 @@ If a local app folder with the same `ha_analyst` slug was used previously, remov
 HA Analyst provides **Support & beta diagnostics** in its Home Assistant Ingress configuration UI. When reporting a problem, run the **runtime self-test** first and then choose **Download diagnostics package**. The ZIP contains technical release, installation, readiness, capability, integration, consistency and dashboard summaries plus runtime-file metadata. It does not contain raw states, entity/device IDs, user configuration, Home Assistant or Zigbee2MQTT tokens, license keys or signed lease tokens.
 
 For a beta issue report, include the HA Analyst version/build, Home Assistant version, architecture (`amd64`/`aarch64`), test type (fresh install/update/recovery), visible Bridge restart state, runtime self-test result, approximate failure time and the diagnostics package. Do not publish additional logs or screenshots if they expose credentials, internal URLs or private household data.
+
+For planned acceptance runs, the public support area also provides the structured **HA Analyst beta acceptance report** form. It separates fresh install, update, recovery, runtime and diagnostics acceptance without requesting secrets or household data.
 
 ### Useful information when reporting a problem
 
