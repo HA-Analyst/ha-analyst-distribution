@@ -1,9 +1,75 @@
-# HA Analyst – Installation
+# HA Analyst – Installation / Setup
 
-1. Distributionsrepository in Home Assistant hinzufügen.
-2. HA Analyst installieren und starten.
-3. Falls die Bridge neu installiert wurde, dem sichtbaren Hinweis folgen und Home Assistant einmal manuell neu starten.
+**Deutsch** · [English](#english)
+
+## Deutsch
+
+### Voraussetzungen
+
+- Home Assistant `2026.9.0` oder neuer.
+- Unterstützte Architektur: `amd64` oder `aarch64`.
+- Administrativer Zugriff auf den Home-Assistant-App-Store.
+
+### Installation
+
+1. Das HA-Analyst-Distributionsrepository in Home Assistant hinzufügen.
+2. **HA Analyst** installieren und starten.
+3. Falls die Bridge neu installiert oder aktualisiert wurde, dem sichtbaren Hinweis folgen und Home Assistant einmal manuell neu starten.
 4. Nach vollständiger Analyst-Readiness wird das verwaltete Dashboard automatisch synchronisiert.
+5. Das Dashboard erst dann als betriebsbereit bewerten, wenn die Analyst-Karten echte Daten anzeigen.
 
-Dokumentation: https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md  
-Support / Feedback: https://github.com/HA-Analyst/ha-analyst-distribution/issues
+### Update
+
+- Updates werden über dasselbe Repository angeboten.
+- Während der Beta werden unveränderliche Versions-Tags verwendet; es gibt keinen beweglichen `latest`-Tag.
+- Bei Bridge-Änderungen kann erneut ein Home-Assistant-Neustart erforderlich sein. Der Analyst weist sichtbar darauf hin.
+
+### Wechsel von einem lokalen Entwicklungsstand
+
+Wenn zuvor ein lokaler App-Ordner mit demselben Slug `ha_analyst` verwendet wurde, muss dieser lokale Bestand entfernt werden, bevor die Repository-Version eindeutig verwendet werden kann. Ein lokaler Bestand kann die Repository-Version im App-Store überlagern.
+
+### Was bei Problemen hilfreich ist
+
+1. App-Protokoll öffnen und den Zeitpunkt des Fehlers notieren.
+2. Prüfen, ob ein Home-Assistant-Neustart für die Bridge noch aussteht.
+3. Prüfen, ob Dashboard und Karten nach Analyst-Readiness echte Daten anzeigen.
+4. Diagnose-/Supportinformationen nur über die vorgesehenen Analyst-Funktionen weitergeben; keine Home-Assistant-Zugangsdaten oder Tokens veröffentlichen.
+
+📘 [Dokumentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
+
+---
+
+## English
+
+### Requirements
+
+- Home Assistant `2026.9.0` or newer.
+- Supported architecture: `amd64` or `aarch64`.
+- Administrative access to the Home Assistant app store.
+
+### Installation
+
+1. Add the HA Analyst distribution repository to Home Assistant.
+2. Install and start **HA Analyst**.
+3. If the Bridge was newly installed or updated, follow the visible notice and restart Home Assistant once.
+4. After full Analyst readiness, the managed dashboard is synchronized automatically.
+5. Treat the dashboard as operational only after the Analyst cards display real data.
+
+### Update
+
+- Updates are delivered through the same repository.
+- During beta, immutable version tags are used; there is no moving `latest` tag.
+- Bridge changes may require another Home Assistant restart. HA Analyst provides a visible notice when this is required.
+
+### Migrating from a local development installation
+
+If a local app folder with the same `ha_analyst` slug was used previously, remove that local copy before relying on the repository-managed version. A local copy can shadow the repository version in the app store.
+
+### Useful information when reporting a problem
+
+1. Open the app log and note when the problem occurred.
+2. Check whether a Home Assistant restart for the Bridge is still pending.
+3. Verify that the dashboard and cards show real data after Analyst readiness.
+4. Share diagnostic/support information only through the intended Analyst mechanisms; never publish Home Assistant credentials or tokens.
+
+📘 [Documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
