@@ -1,0 +1,185 @@
+name: HA Analyst beta acceptance report
+description: Record fresh-install, update, recovery, runtime and diagnostics acceptance evidence for the closed beta.
+title: "[Beta acceptance] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Testen / Thanks for testing HA Analyst.
+
+        Dieses Formular ist für strukturierte Beta-Abnahmen gedacht. Bitte keine Home-Assistant-Tokens, Zigbee2MQTT-Tokens, Lizenzschlüssel, signierten Lease-Tokens, internen URLs oder persönliche Hausdaten einfügen.
+
+        This form records structured beta acceptance evidence. Do not paste Home Assistant credentials, Zigbee2MQTT tokens, license keys, signed lease tokens, internal URLs, or private household data.
+
+  - type: input
+    id: analyst_version
+    attributes:
+      label: HA Analyst version / Beta build
+      placeholder: "1.0.17.79 / B0.1.02"
+    validations:
+      required: true
+
+  - type: input
+    id: ha_version
+    attributes:
+      label: Home Assistant Core version
+      placeholder: "2026.9.x"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Architecture
+      options:
+        - amd64
+        - aarch64
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: Acceptance scenario / Abnahmeszenario
+      options:
+        - Fresh install on a system that never contained HA Analyst
+        - Update from previous immutable beta
+        - Recovery / rollback exercise
+        - Diagnostics and support package validation
+        - Normal runtime regression
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_state
+    attributes:
+      label: Distribution source state
+      description: Was an old local addons/ha_analyst copy present before the test?
+      options:
+        - No local copy present
+        - Local copy was removed before repository install
+        - Local copy is still present
+        - Unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation / update result
+      options:
+        - PASS
+        - FAIL
+        - Not applicable
+    validations:
+      required: true
+
+  - type: dropdown
+    id: compile_observed
+    attributes:
+      label: Local Native compile observed?
+      options:
+        - No
+        - Yes
+        - Unknown
+        - Not applicable
+    validations:
+      required: true
+
+  - type: dropdown
+    id: restart_notice
+    attributes:
+      label: Bridge restart notice / Bridge-Neustarthinweis
+      options:
+        - Not requested
+        - Requested and performed
+        - Requested but not performed
+        - Unsure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runtime_selftest
+    attributes:
+      label: Runtime self-test
+      options:
+        - PASS
+        - FAIL
+        - Could not run
+        - Not run
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dashboard
+    attributes:
+      label: Dashboard readiness
+      options:
+        - Ready with real data
+        - Dashboard exists but data/cards are incomplete
+        - Dashboard missing
+        - Not checked
+    validations:
+      required: true
+
+  - type: dropdown
+    id: config_survived
+    attributes:
+      label: User configuration survived? / Benutzerkonfiguration erhalten?
+      options:
+        - Yes
+        - No
+        - Not applicable
+        - Not checked
+    validations:
+      required: true
+
+  - type: dropdown
+    id: diagnostics
+    attributes:
+      label: Diagnostics ZIP
+      options:
+        - Generated successfully
+        - Generation failed
+        - Not tested
+    validations:
+      required: true
+
+  - type: dropdown
+    id: diagnostics_validator
+    attributes:
+      label: Diagnostics privacy validation
+      description: Result of the maintainer-side diagnostics ZIP validator/manual review, if performed.
+      options:
+        - PASS
+        - FAIL
+        - Pending maintainer review
+        - Not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Beobachtungen
+      description: Record only technical observations needed to reproduce or assess the result. Avoid household names, internal URLs and credentials.
+    validations:
+      required: false
+
+  - type: textarea
+    id: diagnostics_attachment
+    attributes:
+      label: Diagnostics package / Diagnosepaket
+      description: Attach the HA Analyst diagnostics ZIP when diagnostics validation is part of this acceptance report.
+      placeholder: Drag the HA Analyst diagnostics ZIP here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I checked this report for credentials, tokens, license keys, internal URLs, names and other private household data.
+          required: true
