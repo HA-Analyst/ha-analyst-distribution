@@ -1,7 +1,7 @@
 name: HA Analyst
 version: 1.0.17.78
 slug: ha_analyst
-description: Informations-, Analyse- und Wissensschicht für Home Assistant
+description: Automatic home analysis, context & diagnostics / Automatische Hausanalyse, Kontext & Diagnose
 url: https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md
 image: ghcr.io/ha-analyst/ha-analyst
 startup: application
