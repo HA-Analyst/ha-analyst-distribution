@@ -1,11 +1,11 @@
 # HA Analyst – Changelog
 
-## 1.0.17.83 – B0.1.02 – Diagnostics & External Validation
+## 1.0.17.84 – B0.1.02 – Diagnostics & External Validation
 
 ### Deutsch
 
 - Der sourcefreie Native-Core-Stand wurde für `amd64` und `aarch64` gebaut, als unveränderliches Multi-Arch-Image veröffentlicht und anschließend ohne GHCR-Anmeldung extern validiert.
-- Das veröffentlichte Manifest `ghcr.io/ha-analyst/ha-analyst:1.0.17.83` ist anonym lesbar; beide unterstützten Architekturen lassen sich ohne Registry-Credentials ziehen.
+- Das veröffentlichte Manifest `ghcr.io/ha-analyst/ha-analyst:1.0.17.84` ist anonym lesbar; beide unterstützten Architekturen lassen sich ohne Registry-Credentials ziehen.
 - Das bestehende Ingress-Diagnosepaket wurde um einen strikt erlaubnislistenbasierten Lizenzierungsstatus ergänzt. Exportiert werden nur technische Zustände wie Enforcement, Konfiguration, Client-Status, effektive Edition, Beta-Zugriff, Refresh-Fälligkeit und Produktversion.
 - Lizenzschlüssel, signierte Lease-Tokens, Installations-/Lizenz-/Lease-IDs, Signing-Material, Lizenzservice-URL, Home-Assistant-Tokens, Zigbee2MQTT-Secrets sowie Rohinhalte aus States, Entities, Analyse, Knowledge und Benutzerkonfiguration werden nicht in das Diagnosepaket übernommen.
 - Die Support-Dokumentation ist zweisprachig und beschreibt Runtime-Selbsttest, Diagnose-Download und die datensparsame Fehlerberichterstattung für externe Beta-Tester.
@@ -14,7 +14,7 @@
 ### English
 
 - The source-free native core was built for `amd64` and `aarch64`, published as an immutable multi-arch image and then externally validated without GHCR authentication.
-- The published manifest `ghcr.io/ha-analyst/ha-analyst:1.0.17.83` is anonymously readable and both supported architectures can be pulled without registry credentials.
+- The published manifest `ghcr.io/ha-analyst/ha-analyst:1.0.17.84` is anonymously readable and both supported architectures can be pulled without registry credentials.
 - The existing Ingress diagnostics package now includes a strict allowlist-based licensing-status section. Only technical states such as enforcement, configuration, client state, effective edition, beta access, refresh due state and product version are exported.
 - License keys, signed lease tokens, installation/license/lease identifiers, signing material, license-service URL, Home Assistant tokens, Zigbee2MQTT secrets and raw States, Entities, Analysis, Knowledge or user-configuration payloads are not included in the diagnostics package.
 - Bilingual support documentation describes the runtime self-test, diagnostics download and privacy-preserving issue reporting workflow for external beta testers.

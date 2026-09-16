@@ -26,6 +26,10 @@
 - Während der Beta werden unveränderliche Versions-Tags verwendet; es gibt keinen beweglichen `latest`-Tag.
 - Bei Bridge-Änderungen kann erneut ein Home-Assistant-Neustart erforderlich sein. Der Analyst weist sichtbar darauf hin.
 
+### Sprache der Analyst-Konfiguration
+
+Unter **Darstellung → Analyst-Sprache** gilt eine gemeinsame Einstellung für Konfiguration und Lizenzansicht auf allen Geräten: **Auto**, **Deutsch** oder **English**. Nach dem Speichern wird die Seite neu geladen. Andere geöffnete Analyst-Seiten bitte neu laden. Auto übernimmt die Home-Assistant-Systemsprache beim ersten Öffnen nach einem App-Neustart. Browser-Sprachen und alte `?lang=`-Links ändern diese Einstellung nicht. Noch nicht übersetzte Dashboard- und Roadmap-Inhalte sind davon unabhängig.
+
 ### Wechsel von einem lokalen Entwicklungsstand
 
 Wenn zuvor ein lokaler App-Ordner mit demselben Slug `ha_analyst` verwendet wurde, muss dieser lokale Bestand entfernt werden, bevor die Repository-Version eindeutig verwendet werden kann. Ein lokaler Bestand kann die Repository-Version im App-Store überlagern.
@@ -73,6 +77,10 @@ Für geplante Abnahmeläufe steht im öffentlichen Support-Bereich zusätzlich d
 - Updates are delivered through the same repository.
 - During beta, immutable version tags are used; there is no moving `latest` tag.
 - Bridge changes may require another Home Assistant restart. HA Analyst provides a visible notice when this is required.
+
+### Analyst configuration language
+
+Under **Appearance → Analyst language**, one shared setting applies to configuration and licensing on all devices: **Auto**, **Deutsch** or **English**. Saving reloads the page; reload other open Analyst pages as well. Auto reads the Home Assistant system language when first opened after an app restart. Browser languages and old `?lang=` links do not override this setting. Dashboard and roadmap content that has not yet been translated is separate from this setting.
 
 ### Migrating from a local development installation
 
