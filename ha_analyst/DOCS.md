@@ -1,6 +1,6 @@
 # HA Analyst – Installation / Setup
 
-**Deutsch** · [English](#english)
+**Deutsch** · [English version](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md#english)
 
 ## Deutsch
 
@@ -12,8 +12,10 @@
 
 ### Installation
 
-1. Das HA-Analyst-Distributionsrepository in Home Assistant hinzufügen.
-2. **HA Analyst** installieren und starten.
+> HA Analyst wird als **Home-Assistant-App** (früher Add-on) installiert. Es handelt sich nicht um eine HACS-Integration; HACS wird für die Installation nicht verwendet.
+
+1. Das HA-Analyst-Distributionsrepository im Home-Assistant-App-Store hinzufügen.
+2. **HA Analyst** als App installieren und starten.
 3. Falls die Bridge neu installiert oder aktualisiert wurde, dem sichtbaren Hinweis folgen und Home Assistant einmal manuell neu starten.
 4. Nach vollständiger Analyst-Readiness wird das verwaltete Dashboard automatisch synchronisiert.
 5. Das Dashboard erst dann als betriebsbereit bewerten, wenn die Analyst-Karten echte Daten anzeigen.
@@ -58,8 +60,10 @@ Für geplante Abnahmeläufe steht im öffentlichen Support-Bereich zusätzlich d
 
 ### Installation
 
-1. Add the HA Analyst distribution repository to Home Assistant.
-2. Install and start **HA Analyst**.
+> HA Analyst is installed as a **Home Assistant app** (formerly add-on). It is not a HACS integration, and HACS is not used for installation.
+
+1. Add the HA Analyst distribution repository to the Home Assistant app store.
+2. Install and start **HA Analyst** as an app.
 3. If the Bridge was newly installed or updated, follow the visible notice and restart Home Assistant once.
 4. After full Analyst readiness, the managed dashboard is synchronized automatically.
 5. Treat the dashboard as operational only after the Analyst cards display real data.
@@ -90,4 +94,4 @@ For planned acceptance runs, the public support area also provides the structure
 4. Run the runtime self-test and create the intended diagnostics package.
 5. Share diagnostic/support information only through the intended Analyst mechanisms; never publish Home Assistant credentials or tokens.
 
-📘 [Documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
+📘 [Documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md#english) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)

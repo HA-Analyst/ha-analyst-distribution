@@ -1,12 +1,12 @@
 # HA Analyst Beta
 
 ![Beta](https://img.shields.io/badge/channel-Beta-orange)
-![Version](https://img.shields.io/badge/version-1.0.17.82-blue)
+![Version](https://img.shields.io/badge/version-1.0.17.83-blue)
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.9%2B-41BDF5)
 ![Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20aarch64-6E56CF)
 ![Runtime](https://img.shields.io/badge/runtime-source--free-success)
 
-**Deutsch** · [English](#english)
+**Deutsch** · [English version](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/README.md#english)
 
 HA Analyst ist eine Informations-, Analyse- und Wissensschicht für Home Assistant. Er strukturiert den vorhandenen Hauszustand automatisch und stellt daraus verständliche Übersichten, Zusammenhänge und Diagnoseinformationen bereit.
 
@@ -21,7 +21,7 @@ HA Analyst ist eine Informations-, Analyse- und Wissensschicht für Home Assista
 
 | Merkmal | Stand |
 | --- | --- |
-| Version | `1.0.17.82` |
+| Version | `1.0.17.83` |
 | Kanal | Beta |
 | Home Assistant | `2026.9.0+` |
 | Architektur | `amd64`, `aarch64` |
@@ -32,8 +32,10 @@ HA Analyst ist eine Informations-, Analyse- und Wissensschicht für Home Assista
 
 ### Schnellstart
 
-1. Distributionsrepository in Home Assistant hinzufügen.
-2. **HA Analyst** installieren und starten.
+> **Installationsart:** HA Analyst ist eine **Home-Assistant-App** (früher Add-on) und keine HACS-Integration. Die Installation erfolgt im Home-Assistant-App-Store über das Distributionsrepository, nicht über HACS.
+
+1. Das HA-Analyst-Distributionsrepository im Home-Assistant-App-Store hinzufügen.
+2. **HA Analyst** als App installieren und starten.
 3. Wenn Home Assistant einen Neustart für die Bridge verlangt, den sichtbaren Hinweis befolgen und Home Assistant einmal neu starten.
 4. Nach vollständiger Analyst-Readiness wird das verwaltete Dashboard automatisch synchronisiert.
 
@@ -56,7 +58,7 @@ HA Analyst is an information, analysis and knowledge layer for Home Assistant. I
 
 | Item | Status |
 | --- | --- |
-| Version | `1.0.17.82` |
+| Version | `1.0.17.83` |
 | Channel | Beta |
 | Home Assistant | `2026.9.0+` |
 | Architectures | `amd64`, `aarch64` |
@@ -67,9 +69,11 @@ HA Analyst is an information, analysis and knowledge layer for Home Assistant. I
 
 ### Quick start
 
-1. Add the distribution repository to Home Assistant.
-2. Install and start **HA Analyst**.
+> **Installation type:** HA Analyst is a **Home Assistant app** (formerly add-on), not a HACS integration. Install it from the Home Assistant app store via the distribution repository, not through HACS.
+
+1. Add the HA Analyst distribution repository to the Home Assistant app store.
+2. Install and start **HA Analyst** as an app.
 3. If Home Assistant requests a restart for the Bridge, follow the visible notice and restart Home Assistant once.
 4. After full Analyst readiness, the managed dashboard is synchronized automatically.
 
-📘 [Documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
+📘 [Documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md#english) · 🧾 [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md) · 💬 [Support / Feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)

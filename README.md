@@ -24,7 +24,7 @@ Diese Ziele liegen vollständig im öffentlichen Distributionsrepository und ble
 
 ### Installation
 
-Nach der ausdrücklichen externen Beta-Freigabe kann dieses Repository als Home-Assistant-App-/Add-on-Repository eingebunden werden. HA Analyst installiert seine Home-Assistant-Bridge und das verwaltete Analyst-Dashboard über den vorgesehenen Onboarding-Ablauf. Falls nach einer Bridge-Installation ein Home-Assistant-Neustart erforderlich ist, fordert HA Analyst diesen ausdrücklich an; ein Neustart wird nicht automatisch ausgelöst.
+Nach der ausdrücklichen externen Beta-Freigabe kann dieses Repository als Home-Assistant-App-Repository eingebunden werden. HA Analyst ist eine **Home-Assistant-App** (früher Add-on) und keine HACS-Integration; die Installation erfolgt im Home-Assistant-App-Store, nicht über HACS. HA Analyst installiert seine Home-Assistant-Bridge und das verwaltete Analyst-Dashboard über den vorgesehenen Onboarding-Ablauf. Falls nach einer Bridge-Installation ein Home-Assistant-Neustart erforderlich ist, fordert HA Analyst diesen ausdrücklich an; ein Neustart wird nicht automatisch ausgelöst.
 
 Die detaillierte Installationsanleitung befindet sich unter [ha_analyst/DOCS.md](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md).
 
@@ -52,7 +52,7 @@ Current distribution image: `ghcr.io/ha-analyst/ha-analyst`.
 
 ### Public beta resources
 
-- [Installation and beta documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md)
+- [Installation and beta documentation](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md#english)
 - [Changelog](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/CHANGELOG.md)
 - [Support and beta feedback](https://github.com/HA-Analyst/ha-analyst-distribution/issues)
 - [Structured beta acceptance report](https://github.com/HA-Analyst/ha-analyst-distribution/issues/new?template=beta-acceptance-report.yml)
@@ -62,9 +62,9 @@ All of these resources live in the public distribution repository and therefore 
 
 ### Installation
 
-After the external beta is explicitly opened, this repository can be added to the Home Assistant app/add-on store. HA Analyst installs its Home Assistant Bridge and managed Analyst dashboard through the intended onboarding flow. If a Home Assistant restart is required after Bridge installation or update, HA Analyst shows an explicit notice; it does not restart Home Assistant automatically.
+After the external beta is explicitly opened, this repository can be added to the Home Assistant app store. HA Analyst is a **Home Assistant app** (formerly add-on), not a HACS integration; install it from the Home Assistant app store, not through HACS. HA Analyst installs its Home Assistant Bridge and managed Analyst dashboard through the intended onboarding flow. If a Home Assistant restart is required after Bridge installation or update, HA Analyst shows an explicit notice; it does not restart Home Assistant automatically.
 
-Detailed installation instructions are available in [ha_analyst/DOCS.md](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md).
+Detailed installation instructions are available in [ha_analyst/DOCS.md](https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md#english).
 
 ### Support and feedback
 
