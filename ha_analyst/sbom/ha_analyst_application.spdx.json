@@ -1,0 +1,184 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "HA-Analyst-1.0.18.5-application-SBOM",
+  "documentNamespace": "https://ha-analyst.invalid/spdx/1.0.18.5/6fc696532c8cbb3223328633",
+  "creationInfo": {
+    "created": "2026-09-19T00:00:00Z",
+    "creators": [
+      "Tool: HA-Analyst-generate_application_sbom-1.0.0"
+    ],
+    "licenseListVersion": "3.26"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-HA-Analyst",
+      "name": "HA Analyst",
+      "versionInfo": "1.0.18.5",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "Copyright (c) 2026 Sven Kolle",
+      "homepage": "NOASSERTION",
+      "comment": "Proprietary product package; this SBOM documents third-party dependencies only."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-runtime-base-ghcr-io-home-assistant-base",
+      "name": "ghcr.io/home-assistant/base",
+      "versionInfo": "3.24-2026.08.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://github.com/home-assistant/docker-base",
+      "comment": "HA Analyst dependency scope: runtime-base"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-runtime-python-websocket-client",
+      "name": "websocket-client",
+      "versionInfo": "1.9.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://github.com/websocket-client/websocket-client",
+      "comment": "HA Analyst dependency scope: runtime-python"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-runtime-python-PyYAML",
+      "name": "PyYAML",
+      "versionInfo": "6.0.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://pyyaml.org/",
+      "comment": "HA Analyst dependency scope: runtime-python"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-runtime-python-cryptography",
+      "name": "cryptography",
+      "versionInfo": "46.0.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0 OR BSD-3-Clause",
+      "licenseDeclared": "Apache-2.0 OR BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://github.com/pyca/cryptography",
+      "comment": "HA Analyst dependency scope: runtime-python"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-runtime-python-cffi",
+      "name": "cffi",
+      "versionInfo": "2.1.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://cffi.readthedocs.io/",
+      "comment": "HA Analyst dependency scope: runtime-python"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-runtime-python-pycparser",
+      "name": "pycparser",
+      "versionInfo": "3.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://github.com/eliben/pycparser",
+      "comment": "HA Analyst dependency scope: runtime-python"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-build-only-Nuitka",
+      "name": "Nuitka",
+      "versionInfo": "4.2.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "AGPL-3.0-or-later WITH Nuitka-runtime-exception",
+      "licenseDeclared": "AGPL-3.0-or-later WITH Nuitka-runtime-exception",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://nuitka.net/",
+      "comment": "HA Analyst dependency scope: build-only"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-build-only-rjsmin",
+      "name": "rjsmin",
+      "versionInfo": "1.2.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://pypi.org/project/rjsmin/1.2.2/",
+      "comment": "HA Analyst dependency scope: build-only"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-build-only-patchelf-pypi",
+      "name": "patchelf-pypi",
+      "versionInfo": "0.17.2.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0 AND GPL-3.0-or-later",
+      "licenseDeclared": "Apache-2.0 AND GPL-3.0-or-later",
+      "copyrightText": "NOASSERTION",
+      "homepage": "https://pypi.org/project/patchelf/0.17.2.4/",
+      "comment": "HA Analyst dependency scope: build-only"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-runtime-base-ghcr-io-home-assistant-base"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-runtime-python-websocket-client"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-runtime-python-PyYAML"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-runtime-python-cryptography"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-runtime-python-cffi"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-runtime-python-pycparser"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-build-only-Nuitka"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-build-only-rjsmin"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-HA-Analyst",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-build-only-patchelf-pypi"
+    }
+  ],
+  "comment": "Application-level pre-build SBOM. Final image SBOM for each architecture remains a release gate and must include OS/base-image packages from the exact built image."
+}

@@ -65,6 +65,10 @@ profile ha_analyst flags=(attach_disconnected,mediate_deleted) {
   /homeassistant/custom_components/.ha_analyst.previous/ rw,
   /homeassistant/custom_components/.ha_analyst.previous/** rwk,
 
+  /homeassistant/www/ rw,
+  /homeassistant/www/ha_analyst/ rw,
+  /homeassistant/www/ha_analyst/** rwk,
+
   /homeassistant/dashboards/ rw,
   /homeassistant/dashboards/ha_analyst/ rw,
   /homeassistant/dashboards/ha_analyst/** rwk,

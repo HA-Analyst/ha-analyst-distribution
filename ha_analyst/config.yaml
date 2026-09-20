@@ -1,5 +1,5 @@
 name: HA Analyst
-version: 1.0.17.85
+version: 1.0.18.5
 slug: ha_analyst
 description: Automatic home analysis, context & diagnostics / Automatische Hausanalyse, Kontext & Diagnose
 url: https://github.com/HA-Analyst/ha-analyst-distribution/blob/main/ha_analyst/DOCS.md
@@ -30,7 +30,7 @@ panel_title: HA Analyst
 panel_icon: mdi:home-analytics
 panel_admin: true
 map:
-- type: addon_config
+- type: app_config
   read_only: false
   path: /config
 - type: homeassistant_config

@@ -1,7 +1,7 @@
 # HA Analyst Beta
 
 ![Beta](https://img.shields.io/badge/channel-Beta-orange)
-![Version](https://img.shields.io/badge/version-1.0.17.85-blue)
+![Version](https://img.shields.io/badge/version-1.0.18.5-blue)
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.9%2B-41BDF5)
 ![Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20aarch64-6E56CF)
 ![Runtime](https://img.shields.io/badge/runtime-source--free-success)
@@ -21,7 +21,7 @@ HA Analyst ist eine Informations-, Analyse- und Wissensschicht für Home Assista
 
 | Merkmal | Stand |
 | --- | --- |
-| Version | `1.0.17.85` |
+| Version | `1.0.18.5` |
 | Kanal | Beta |
 | Home Assistant | `2026.9.0+` |
 | Architektur | `amd64`, `aarch64` |
@@ -58,7 +58,7 @@ HA Analyst is an information, analysis and knowledge layer for Home Assistant. I
 
 | Item | Status |
 | --- | --- |
-| Version | `1.0.17.85` |
+| Version | `1.0.18.5` |
 | Channel | Beta |
 | Home Assistant | `2026.9.0+` |
 | Architectures | `amd64`, `aarch64` |
